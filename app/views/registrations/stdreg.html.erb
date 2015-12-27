@@ -1,0 +1,49 @@
+<h1>Student Registration Page</h1>
+<%=form_tag 'stdregdata' do %>
+Student Name: 
+<%=text_field_tag 'sname'%>
+<br>
+<br>
+Class: 
+<%=number_field_tag 'class'%>
+<br>	
+<br>
+Total Marks: 
+<%=text_field_tag 'marks'%>
+<br>
+<br>
+Gender: 
+<%=radio_button_tag 'gender','male'%>Male
+<%=radio_button_tag 'gender','female'%>Female
+<br>
+<br>
+Mobile: 
+<%=phone_field_tag 'mobile'%>
+<br>
+<br>
+Email: 
+<%=email_field_tag 'email'%>
+<br>
+<br>
+Sports: 
+<%=check_box_tag 'sports[]', "cricket"%>Cricket
+<%=check_box_tag 'sports[]', "chess"%>Chess
+<%=check_box_tag 'sports[]', "BasketBall" %>BasketBall
+
+<br>
+<br>
+Student Address: <br>
+<%=text_area_tag 'address'%>
+<br>
+<br>
+City: 
+<%=select_tag 'city', '<option>--Select City--</option><option>Hyderabad</option><option>Ahmmadabad</option><option>Delhi</option><option>Chennai</option><option>Mumbai</option><option>Kolkata</option><option>Bangalore</option>'.html_safe%>
+<br>
+<br>
+<%=check_box_tag 'terms'%>
+Accept Terms& Conditions
+<br>
+<br>
+<%=submit_tag 'Register'%>
+
+<%end%>

@@ -1,0 +1,108 @@
+<h1>Forms: </h1>
+<%=form_tag 'formsresult' do %>
+
+Gender:
+<%= radio_button_tag 'gender', 'male' %>Male
+<%= radio_button_tag 'gender', 'female' %>Female
+<br>
+<br>
+Time: 
+<%= check_box_tag 'time' %>
+<br>
+<br>
+Email:
+<%=email_field_tag 'Email'%>
+
+<br>
+<br>
+Date:
+<%=date_field_tag 'Date'%>
+
+<br>
+<br>
+Password:
+<%=password_field_tag 'pass'%>
+
+<br>
+<br>
+City:
+<%=select_tag "city", "<option>--Select City--</option><option>hyd</option><option>Nalgonda</option><option>manikonda</option><option>Devarakonda</option>".html_safe%>
+<br>
+<br>
+Search:
+<%=search_field_tag 'Search'%>
+
+<br>
+<br>
+Address:<br>
+<%=text_area_tag 'Address'%>
+
+<br>
+<br>
+Phone:
+<%=phone_field_tag 'phone',nil, :placeholder => 'Enter Phone Number' %>
+
+<br>
+<br>
+URL:
+<%=url_field_tag 'url'%>
+
+<br>
+<br>
+Attachment:
+<%=file_field_tag 'attachment' %>
+
+<br>
+<br>
+Number Range:
+<%=number_field_tag 'quantity',nil, :placeholder => 'Select Number' %>
+
+<br>
+<br>
+Color:
+<%=color_field_tag 'color' %>
+
+<br>
+<br>
+Date&Time:
+<%=datetime_field_tag 'datetime' %>
+
+<br>
+<br>
+Lable:
+<%=label_tag 'govardhan' %>
+
+<br>
+<br>
+Range:
+<%=range_field_tag 'range' %>
+<br>
+<br>
+Time:
+<%=time_field_tag 'time' %>
+<br>
+<br>
+Week:
+<%=week_field_tag 'week' %>
+
+<br>
+<br>
+Select Country :
+<%=select_tag 'Country', '<option>--Select Country--</option><option>India</option><option>Srilanka</option><option>Pakistan</option>'.html_safe %>
+
+
+<br>
+<br>
+Nationality:
+India<%=radio_button_tag 'nationality','india' %>
+Other<%=radio_button_tag 'nationality','other' %>
+
+<br>
+<br>
+<%=submit_tag name='Save' %>
+
+
+
+
+<%end%>
+

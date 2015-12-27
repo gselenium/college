@@ -1,0 +1,31 @@
+<h1>Student Registration Data:</h1>
+Student Name: <%=@Sname%>
+<br>
+<br>
+Class		: <%=@Class%>
+<br>
+<br>
+Total Marks : <%=@Marks%>
+<br>
+<br>
+Gender		: <%=@Gender%>
+<br>
+<br>
+Mobile		: <%=@Mobile%>
+<br>
+<br>
+Email		: <%=@Email%>
+<br>
+<br>
+Sports		: <%@Sports.each do |s|%>
+				<%=s%>
+			  <% end %>
+<br>
+<br>
+StudentAddress:<%=@Address%>
+<br>
+<br>
+City		: <%=@City%>
+<br>
+<br>
+<%=link_to 'New', registrations_stdreg_path %>
